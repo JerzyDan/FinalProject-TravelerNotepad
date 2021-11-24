@@ -11,7 +11,7 @@
 	<groupId>com.ironhack</groupId>
 	<artifactId>country-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>country-service</name>
+	<name>country-com.ironhack.countryservice.service</name>
 	<description>Final project for Bootcamp</description>
 	<properties>
 		<java.version>17</java.version>
