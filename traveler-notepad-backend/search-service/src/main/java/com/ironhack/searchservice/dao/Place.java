@@ -1,6 +1,6 @@
-package com.ironhack.placeservice.dao;
+package com.ironhack.searchservice.dao;
 
-import com.ironhack.placeservice.enums.Status;
+import com.ironhack.searchservice.enums.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -35,14 +35,6 @@ public class Place {
         this.daysNeeded = daysNeeded;
         this.status = status;
         this.description = description;
-        this.countryId = countryId;
-    }
-
-    public Place(String name, String city, Integer daysNeeded, Status status, Long countryId) {
-        this.name = name;
-        this.city = city;
-        this.daysNeeded = daysNeeded;
-        this.status = status;
         this.countryId = countryId;
     }
 

@@ -26,7 +26,7 @@ class PlaceServiceTest {
     @BeforeEach
     void setUp() {
         storedPlace = new Place("Lomsdal-Visten nasjonalpark", Status.NEXT_TRIP);
-        newPlace = new Place(1l,"Nordkapp", "Skarsvag", 21, Status.TO_VISIT, 5l);
+        newPlace = new Place(1l,"Nordkapp", "Skarsvag", 21, Status.TO_VISIT, "Most to north.",5l);
 
         placeRepository.save(storedPlace);
     }
