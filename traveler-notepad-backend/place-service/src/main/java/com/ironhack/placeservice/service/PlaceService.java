@@ -51,6 +51,14 @@ public class PlaceService {
                 }
             }
 
+            if(place.getDescription()!=null) {
+                try {
+                    storedPlace.get().setDescription(place.getDescription());
+                } catch (Exception e) {
+                    throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Description can not be blank");
+                }
+            }
+
             if (place.getStatus()!=null) {
                 try {
                     storedPlace.get().setStatus(place.getStatus());

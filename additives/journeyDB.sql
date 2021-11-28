@@ -12,7 +12,8 @@ insert into country (id, name) values
 (2, "Tunisia"),
 (3, "Yemen"),
 (4, "Zambia"),
-(5, "Oman");
+(5, "Oman"),
+(6, "Island");
 
 insert into place (id, name) values 
 (1, "Desert"),
