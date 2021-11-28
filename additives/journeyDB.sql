@@ -7,6 +7,16 @@ show tables;
 select * from country;
 select * from place;
 
+select country_id AS 'country', status, count(id) AS 'places' , sum(days_needed) AS 'days' from place
+group by country_id, status;
+select count(distinct country_id) AS 'Visited countries' FROM place where status = 1;
+select count(distinct country_id) AS 'Favourite countries' FROM place where status = 3;
+select count(id) AS 'Visited places' FROM place where status = 1;
+select count(id) AS 'Favourite places' FROM place where status = 3;
+select count(id) AS 'Places - next trip', sum(days_needed) AS 'Days needed' from  place where status = 2;
+
+
+
 insert into country (id, name) values 
 (1, "Quatar"),
 (2, "Tunisia"),
