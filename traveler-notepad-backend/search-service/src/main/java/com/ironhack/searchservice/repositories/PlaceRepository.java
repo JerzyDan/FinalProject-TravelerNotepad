@@ -3,7 +3,6 @@ package com.ironhack.searchservice.repositories;
 import com.ironhack.searchservice.dao.Place;
 import com.ironhack.searchservice.enums.Status;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
