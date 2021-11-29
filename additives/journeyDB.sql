@@ -14,6 +14,7 @@ select count(distinct country_id) AS 'Favourite countries' FROM place where stat
 select count(id) AS 'Visited places' FROM place where status = 1;
 select count(id) AS 'Favourite places' FROM place where status = 3;
 select count(id) AS 'Places - next trip', sum(days_needed) AS 'Days needed' from  place where status = 2;
+SELECT SUM(days_needed) FROM Place p WHERE p.status = 3;
 
 
 
