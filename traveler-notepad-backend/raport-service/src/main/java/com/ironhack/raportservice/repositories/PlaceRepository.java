@@ -18,8 +18,8 @@ public interface PlaceRepository extends JpaRepository<Place,Long> {
     @Query("SELECT COUNT(DISTINCT country_id) FROM Place p WHERE p.status = :status")
     Integer countCountriesByStatus(@Param("status") Status status);
 
-/*    //Count days needed by status
-    @Query("SELECT SUM(days_needed) FROM Place p WHERE p.status = :status")
-    Integer countDaysNeededByStatus(@Param("status") Status status);*/
+    //Count days needed by status
+    @Query("SELECT SUM(p.daysNeeded) FROM Place p WHERE p.status = :status")
+    Integer countDaysNeededByStatus(@Param("status") Status status);
 
 }

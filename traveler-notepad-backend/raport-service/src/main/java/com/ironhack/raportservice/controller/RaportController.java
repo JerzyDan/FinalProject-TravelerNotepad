@@ -19,15 +19,15 @@ public class RaportController {
         return placeRepository.countPlacesByStatus(status);
     }
 
-    @GetMapping("/vc/{status}")
+    @GetMapping("/c/{status}")
     @ResponseStatus(HttpStatus.OK)
     public Integer countCountriesByStatus(@PathVariable(name = "status")Status status) {
         return placeRepository.countCountriesByStatus(status);
     }
 
-/*    @GetMapping("/d/{status}")
+    @GetMapping("/d/{status}")
     @ResponseStatus(HttpStatus.OK)
     public Integer countDaysNeededByStatus(@PathVariable(name = "status")Status status) {
         return placeRepository.countDaysNeededByStatus(status);
-    }*/
+    }
 }
