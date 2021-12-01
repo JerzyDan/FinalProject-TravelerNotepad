@@ -1,13 +1,12 @@
 package com.ironhack.countryservice.service;
 
 import com.ironhack.countryservice.dao.Country;
+import com.ironhack.countryservice.repositories.CountryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-import com.ironhack.countryservice.repositories.CountryRepository;
 import org.springframework.web.server.ResponseStatusException;
 
-import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -15,20 +14,6 @@ public class CountryService {
 
     @Autowired
     private CountryRepository countryRepository;
-
-/*    public List<Country> getAllCountries() {
-        List<Country> allCountries = countryRepository.findAll();
-        if (allCountries.isEmpty()){
-            throw new ResponseStatusException(HttpStatus.NOT_FOUND,"There are no countries to display.");
-        }
-        return  allCountries;
-    }
-
-    public Country getById(Long id) {
-        Country country = countryRepository.findById(id).orElseThrow(
-                () -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Country with id "+id+" does not exist."));
-        return country;
-    }*/
 
     public void update(Long id, Country country) {
         Optional<Country> storedCountry = countryRepository.findById(id);

@@ -27,9 +27,9 @@ insert into country (id, name) values
 (5, "Oman"),
 (6, "Island");
 
-insert into place (id, name) values 
-(1, "Desert"),
-(2, "Mountain"),
-(3, "Ocean"),
-(4, "Forest"),
-(5, "Cave");
+insert into place (id, name, city, days_needed, status, description, country_id) values 
+(1, "Triglav","Zgornja Radovna",1,2,"Top of Slovenia",7),
+(2, "Vernar","Goreljek",2,2,"Vodnikov dom na Velem polju",7),
+(3, "Old City Venezia","Venezia",7,2,"Venezia and surroundings",6),
+(4, "Col Rosa","Cortina d'Amprezzo",1,3,"Via Ferrata",6),
+(5, "Monte Cristallo","Cortina d'Amprezzo",1,0,"Via Ferrata",6);

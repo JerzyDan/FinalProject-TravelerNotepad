@@ -1,15 +1,15 @@
-package com.ironhack.placeservice;
+package com.ironhack.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
-@EnableEurekaClient
 @SpringBootApplication
-public class PlaceServiceApplication {
+@EnableEurekaClient
+public class GatewayApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(PlaceServiceApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(GatewayApplication.class, args);
+    }
 
 }
