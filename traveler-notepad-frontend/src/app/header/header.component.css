@@ -1,0 +1,31 @@
+nav {
+    width: 100%;
+}
+
+.menu {
+    padding: 15px;
+    background-color: cornflowerblue;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu-item {
+    font-size: 1em;
+    color: cornsilk;
+    padding: 15px;
+    text-decoration: none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-variant: small-caps;
+    font-stretch:extra-expanded;
+}
+
+.menu-item:hover {
+    background-color:darkgray
+}
+
+.active {
+    background-color: dodgerblue;
+}
