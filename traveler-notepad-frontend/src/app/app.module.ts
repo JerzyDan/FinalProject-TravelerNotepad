@@ -9,6 +9,7 @@ import { CountriesComponent } from './countries/countries.component';
 import { PlacesComponent } from './places/places.component';
 import { SearchComponent } from './search/search.component';
 import { SummaryComponent } from './summary/summary.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { SummaryComponent } from './summary/summary.component';
     CountriesComponent,
     PlacesComponent,
     SearchComponent,
-    SummaryComponent
+    SummaryComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
