@@ -1,3 +1,4 @@
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SearchComponent } from './search/search.component';
 import { PlacesComponent } from './places/places.component';
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: "summary",
     component: SummaryComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
