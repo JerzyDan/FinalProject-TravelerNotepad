@@ -9,23 +9,23 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: "",
+    path: '',
     component: HomeComponent
   },
   {
-    path: "countries",
+    path: 'country',
     component: CountriesComponent
   },
   {
-    path: "places",
+    path: 'places',
     component: PlacesComponent
   },
   {
-    path: "search",
+    path: 'search',
     component: SearchComponent
   },
   {
-    path: "summary",
+    path: 'summary',
     component: SummaryComponent
   },
   {

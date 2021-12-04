@@ -1,5 +1,5 @@
 <h5>Countries list:</h5>
 
 <div>
-    <app-countries></app-countries>
+    <app-country-item *ngFor="let country of countriesList" [country] = "country"></app-country-item>
 </div>
