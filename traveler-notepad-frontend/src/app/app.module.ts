@@ -13,6 +13,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CountryItemComponent } from './country-item/country-item.component';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CountryItemComponent } from './country-item/country-item.component';
     SummaryComponent,
     FooterComponent,
     PageNotFoundComponent,
-    CountryItemComponent
+    CountryItemComponent,
+    CountryDetailComponent
   ],
   imports: [
     BrowserModule,

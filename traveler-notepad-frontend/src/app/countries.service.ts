@@ -8,12 +8,12 @@ import { Country } from './models/countries.model';
 })
 export class CountriesService {
 
-  private readonly baseUrl = 'http://localhost:8000/api/v1';
+  private readonly baseUrl = 'http://localhost:8000/api/v1/country';
 
   constructor(private http:HttpClient) { }
 
   getCountries() : Observable<Country[]> {
-    return this.http.get<Country[]>(this.baseUrl + '/country');
+    return this.http.get<Country[]>(this.baseUrl);
   }
 
   getCountryById(id: number) : Observable<Country> {

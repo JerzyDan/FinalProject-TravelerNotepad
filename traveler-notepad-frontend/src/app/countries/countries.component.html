@@ -1,5 +1,15 @@
-<h5>Countries list:</h5>
+<body>
+    
+    <h5>Countries list:</h5>
 
-<div>
-    <app-country-item *ngFor="let country of countriesList" [country] = "country"></app-country-item>
-</div>
+    <div>
+        <app-country-item *ngFor="let country of countriesList" [country] = "country"></app-country-item>
+    </div>
+
+    <button>Add</button>
+
+    <button>Remove</button>
+
+    <button>Update</button>
+
+</body>

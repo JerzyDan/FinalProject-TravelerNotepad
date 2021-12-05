@@ -1,0 +1,17 @@
+h5 {
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 37px;
+    font-weight: 600;
+}
+
+button {
+    margin-left: 20px;
+}
+
+body {
+    background-image: url('../../assets/parchmentLight.jpg');
+    margin-top: -14px;
+}

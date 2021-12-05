@@ -1,3 +1,4 @@
+import { CountryDetailComponent } from './country-detail/country-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SearchComponent } from './search/search.component';
@@ -15,6 +16,10 @@ const routes: Routes = [
   {
     path: 'country',
     component: CountriesComponent
+  },
+  {
+    path: 'country/:countryId',
+    component: CountryDetailComponent
   },
   {
     path: 'places',
