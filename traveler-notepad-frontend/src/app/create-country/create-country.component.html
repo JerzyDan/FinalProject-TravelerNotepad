@@ -1,0 +1,34 @@
+<body>
+    <h5>Create Country</h5>
+    <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit) = "onSubmit()">
+
+            <div class="form-group">
+                <label for="name">Country name</label>
+                <input type="text" class="form-control" id="name" required [(ngModel)="countries.name" name="name"]>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Official language</label>
+                <input type="text" class="form-control" id="officialLanguage" required [(ngModel)="countries.officialLanguage" name="officialLanguage"]>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Climate</label>
+                <input type="text" class="form-control" id="climate" required [(ngModel)="countries.climate" name="climate"]>
+            </div>
+
+            <div class="form-group">
+                <label for="name">Area</label>
+                <input type="text" class="form-control" id="area" required [(ngModel)="countries.area" name="area"]>
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>   
+    </div>
+
+    <div [hidden]="!submitted">
+        <h4>Country submitted successfully</h4>
+    </div>
+</body>

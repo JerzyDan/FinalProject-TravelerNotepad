@@ -6,7 +6,7 @@
         <app-country-item *ngFor="let country of countriesList" [country] = "country"></app-country-item>
     </div>
 
-    <button>Add</button>
+    <button (click)="addCountry()">Add</button>
 
     <button>Remove</button>
 

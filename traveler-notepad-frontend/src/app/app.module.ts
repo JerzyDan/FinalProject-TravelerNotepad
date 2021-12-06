@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CountryItemComponent } from './country-item/country-item.component';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { CreateCountryComponent } from './create-country/create-country.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CountryDetailComponent } from './country-detail/country-detail.componen
     FooterComponent,
     PageNotFoundComponent,
     CountryItemComponent,
-    CountryDetailComponent
+    CountryDetailComponent,
+    CreateCountryComponent
   ],
   imports: [
     BrowserModule,

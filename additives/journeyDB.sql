@@ -19,13 +19,13 @@ SELECT SUM(days_needed) FROM Place p group by p.status HAVING p.status = 3;
 
 
 
-insert into country (id, name) values 
-(1, "Quatar"),
-(2, "Tunisia"),
-(3, "Yemen"),
-(4, "Zambia"),
-(5, "Oman"),
-(6, "Island");
+insert into country (id, name, area) values 
+(1, "Quatar","11610"),
+(2, "Tunisia", "155360"),
+(3, "Yemen","527970"),
+(4, "Zambia","743390"),
+(5, "Oman","309500"),
+(6, "Iceland","100250");
 
 insert into place (id, name, city, days_needed, status, description, country_id) values 
 (1, "Triglav","Zgornja Radovna",1,2,"Top of Slovenia",7),

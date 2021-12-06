@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Country } from './../models/countries.model';
 import { Component, OnInit } from '@angular/core';
 import { CountriesService } from '../countries.service';
@@ -11,7 +12,10 @@ export class CountriesComponent implements OnInit {
 
   countriesList: Country[];
 
-  constructor(private countriesService:CountriesService) {
+  constructor(
+    private countriesService:CountriesService,
+    private router: Router
+    ) {
     this.countriesList = [];
    }
 
@@ -21,6 +25,10 @@ export class CountriesComponent implements OnInit {
         this.countriesList = result;
       }
     );
+  }
+
+  addCountry(): void {
+    this.router.navigate(['country/add'])
   }
 
 }
