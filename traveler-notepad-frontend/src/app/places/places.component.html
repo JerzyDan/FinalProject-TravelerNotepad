@@ -1,1 +1,15 @@
-<p>places works!</p>
+<body>
+    
+    <h5>The World places:</h5>
+
+    <div>
+        <app-place-item *ngFor="let place of placesList" [place] = "place"></app-place-item>
+    </div>
+
+    <button>Add</button>
+
+    <button>Remove</button>
+
+    <button>Update</button>
+
+</body>

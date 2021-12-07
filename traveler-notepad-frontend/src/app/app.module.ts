@@ -11,6 +11,7 @@ import { SearchComponent } from './search/search.component';
 import { SummaryComponent } from './summary/summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { PlaceItemComponent } from './place-item/place-item.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SearchComponent,
     SummaryComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    PlaceItemComponent
   ],
   imports: [
     BrowserModule,

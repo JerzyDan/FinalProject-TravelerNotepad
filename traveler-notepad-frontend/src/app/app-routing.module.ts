@@ -21,6 +21,10 @@ const routes: Routes = [
     component: PlacesComponent
   },
   {
+    path: "places/:placeId",
+    //TODO 
+  },
+  {
     path: "search",
     component: SearchComponent
   },
