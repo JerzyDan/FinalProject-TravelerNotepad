@@ -5,22 +5,22 @@
 
             <div class="form-group">
                 <label for="name">Country name</label>
-                <input type="text" class="form-control" id="name" required [(ngModel)="countries.name" name="name"]>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="countryName" name="name">
             </div>
 
             <div class="form-group">
                 <label for="name">Official language</label>
-                <input type="text" class="form-control" id="officialLanguage" required [(ngModel)="countries.officialLanguage" name="officialLanguage"]>
+                <input type="text" class="form-control" id="officialLanguage" required [(ngModel)]="countryLanguage" name="officialLanguage">
             </div>
 
             <div class="form-group">
                 <label for="name">Climate</label>
-                <input type="text" class="form-control" id="climate" required [(ngModel)="countries.climate" name="climate"]>
+                <input type="text" class="form-control" id="climate" required [(ngModel)]="countryClimate" name="climate">
             </div>
 
             <div class="form-group">
                 <label for="name">Area</label>
-                <input type="text" class="form-control" id="area" required [(ngModel)="countries.area" name="area"]>
+                <input type="text" class="form-control" id="area" required [(ngModel)]="countryArea" name="area">
             </div>
 
             <button type="submit" class="btn btn-success">Submit</button>
@@ -32,3 +32,4 @@
         <h4>Country submitted successfully</h4>
     </div>
 </body>
+<h1>Welcome to create country component</h1>

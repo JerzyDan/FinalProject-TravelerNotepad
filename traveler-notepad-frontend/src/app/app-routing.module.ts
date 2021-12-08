@@ -23,7 +23,7 @@ const routes: Routes = [
     component: CountryDetailComponent
   },
   {
-    path: 'country/add',
+    path: 'countryadd',
     component: CreateCountryComponent
   },
   {

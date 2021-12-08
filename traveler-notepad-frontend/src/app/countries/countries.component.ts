@@ -28,7 +28,7 @@ export class CountriesComponent implements OnInit {
   }
 
   addCountry(): void {
-    this.router.navigate(['country/add'])
+    this.router.navigate(['countryadd'])
   }
 
 }

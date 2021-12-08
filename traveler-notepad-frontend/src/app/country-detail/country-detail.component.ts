@@ -17,13 +17,15 @@ export class CountryDetailComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {
-    this.country = {
+    this.country = new Country(1, "Valinor", "Valarin, Quenya", "subtropical", "unknown");
+    /*{
+
       id: 1,
       name: "Valinor",
       officialLanguage: "Valarin, Quenya",
       climate: "subtropical",
       area: "unknown"
-    }
+    }*/
    }
 
   ngOnInit(): void {

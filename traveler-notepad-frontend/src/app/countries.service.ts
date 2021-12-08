@@ -21,6 +21,7 @@ export class CountriesService {
   }
 
   postCountry(country: Object) : Observable<Object> {
+    console.log("test payload", country);
     return this.http.post(`${this.baseUrl}/add`, country);
   }
 

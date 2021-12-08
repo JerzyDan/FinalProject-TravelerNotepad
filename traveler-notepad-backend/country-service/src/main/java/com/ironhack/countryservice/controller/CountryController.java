@@ -10,6 +10,7 @@ import com.ironhack.countryservice.service.CountryService;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/country")
 public class CountryController {
