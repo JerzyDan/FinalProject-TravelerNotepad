@@ -35,6 +35,7 @@ public class CountryController {
     }
 
     @PostMapping("/add")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.CREATED)
     public Country store(@RequestBody Country country) {
         return countryRepository.save(country);
