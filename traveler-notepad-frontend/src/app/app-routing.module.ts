@@ -22,7 +22,7 @@ const routes: Routes = [
     component: PlacesComponent
   },
   {
-    path: "places/:placeId",
+    path: "place/:placeId",
     component: PlaceDetailComponent
   },
   {

@@ -33,7 +33,7 @@ export class PlaceDetailComponent implements OnInit {
   }
 
   sendToHome(): void {
-    this.router.navigate(['/place']);
+    this.router.navigate(['/places']);
   }
 
 }
