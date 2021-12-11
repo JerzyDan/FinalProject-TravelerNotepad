@@ -1,7 +1,1 @@
-export class Country {
-    /*id: number;
-    name: string;
-    officialLanguage: string;
-    climate: string;
-    area: string;*/
-}
+export class Country {}

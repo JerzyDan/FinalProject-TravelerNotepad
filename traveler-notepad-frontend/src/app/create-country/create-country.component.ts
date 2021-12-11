@@ -1,5 +1,4 @@
 import { CountryRequest } from './../models/country-request.model';
-//import { Country } from './../models/countries.model';
 import { Component, OnInit } from '@angular/core';
 import { CountriesService } from '../countries.service';
 import { Router } from '@angular/router';
@@ -12,7 +11,6 @@ import { Router } from '@angular/router';
 export class CreateCountryComponent implements OnInit {
 
   country!: CountryRequest
-  //country!: Country;
   submitted = false;
   countryName: string;
   countryLanguage: string;
@@ -31,8 +29,6 @@ export class CreateCountryComponent implements OnInit {
   }
 
   newCountry(): void {
-    //const newContry:Country = new Country();
-
     this.submitted = false;
     this.country = new CountryRequest(20, this.countryName, this.countryLanguage, this.countryClimate, this.countryArea);
   }
@@ -43,7 +39,6 @@ export class CreateCountryComponent implements OnInit {
     this.countriesService
     .postCountry(this.country).subscribe(data => {
       console.log(data)
-      //this.country = new Country();
       this.goToList();
     },
     error => console.log(error));

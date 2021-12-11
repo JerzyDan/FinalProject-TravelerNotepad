@@ -1,11 +1,5 @@
 export class Country {
 
-    /*id!: number;
-    name: string;
-    officialLanguage!: string;
-    climate!: string;
-    area!: string;*/
-
     constructor(private _id: number, private _name: string, private _officialLanguage: string, private _climate: string, private _area: string){
     }
 

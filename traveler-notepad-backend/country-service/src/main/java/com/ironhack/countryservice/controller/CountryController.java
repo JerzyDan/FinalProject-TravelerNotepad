@@ -28,6 +28,7 @@ public class CountryController {
     }
 
     @GetMapping("/{id}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public Country getCountryById(@PathVariable(name = "id")Long id) {
         Optional<Country> optionalCountry = countryRepository.findById(id);
