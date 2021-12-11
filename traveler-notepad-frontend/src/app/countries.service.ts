@@ -8,7 +8,7 @@ import { Country } from './models/countries.model';
 })
 export class CountriesService {
 
-  private readonly baseUrl = 'http://localhost:8000/api/v1/country';
+  private readonly baseUrl = 'http://localhost:8100/api/v1/country';
 
   constructor(private http:HttpClient) { }
 

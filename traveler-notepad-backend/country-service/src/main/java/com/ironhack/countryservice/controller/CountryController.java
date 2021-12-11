@@ -41,6 +41,7 @@ public class CountryController {
         return countryRepository.save(country);
     }
 
+    @CrossOrigin(origins = "*")
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void update(@PathVariable(name = "id")Long id, @RequestBody Country country) {
@@ -48,6 +49,7 @@ public class CountryController {
     }
 
     @DeleteMapping("/{id}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remove (@PathVariable Long id) {
         countryRepository.deleteById(id);

@@ -31,4 +31,12 @@ export class CountriesComponent implements OnInit {
     this.router.navigate(['countryadd'])
   }
 
+  deleteCountry(): void {
+    this.router.navigate(['countrydelete'])
+  }
+
+  updateCountry(): void {
+    this.router.navigate(['coutryupdate'])
+  }
+
 }

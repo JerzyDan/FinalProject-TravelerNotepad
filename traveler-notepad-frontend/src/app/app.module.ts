@@ -16,6 +16,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CountryItemComponent } from './country-item/country-item.component';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
 import { CreateCountryComponent } from './create-country/create-country.component';
+import { DeleteCountryComponent } from './delete-country/delete-country.component';
+import { UpdateCountryComponent } from './update-country/update-country.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { CreateCountryComponent } from './create-country/create-country.componen
     PageNotFoundComponent,
     CountryItemComponent,
     CountryDetailComponent,
-    CreateCountryComponent
+    CreateCountryComponent,
+    DeleteCountryComponent,
+    UpdateCountryComponent
   ],
   imports: [
     BrowserModule,

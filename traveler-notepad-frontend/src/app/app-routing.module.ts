@@ -1,3 +1,5 @@
+import { UpdateCountryComponent } from './update-country/update-country.component';
+import { DeleteCountryComponent } from './delete-country/delete-country.component';
 import { CreateCountryComponent } from './create-country/create-country.component';
 import { CountryDetailComponent } from './country-detail/country-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
@@ -25,6 +27,14 @@ const routes: Routes = [
   {
     path: 'countryadd',
     component: CreateCountryComponent
+  },
+  {
+    path: 'countrydelete',
+    component: DeleteCountryComponent
+  },
+  {
+    path: 'coutryupdate',
+    component: UpdateCountryComponent
   },
   {
     path: 'places',

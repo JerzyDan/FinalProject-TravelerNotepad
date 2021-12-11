@@ -1,0 +1,20 @@
+h5 {
+    margin-left: 20px;
+    color: blanchedalmond;
+}
+
+div {
+    margin-left: 20px;
+    color: rgb(207, 163, 97);
+}
+
+button {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url("../../assets/palms1.jpg");
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    margin-top: -14px;
+}
