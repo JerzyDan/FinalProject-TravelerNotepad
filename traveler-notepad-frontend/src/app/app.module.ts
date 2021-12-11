@@ -1,5 +1,7 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +13,11 @@ import { SearchComponent } from './search/search.component';
 import { SummaryComponent } from './summary/summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CountryItemComponent } from './country-item/country-item.component';
+import { CountryDetailComponent } from './country-detail/country-detail.component';
+import { CreateCountryComponent } from './create-country/create-country.component';
+import { DeleteCountryComponent } from './delete-country/delete-country.component';
+import { UpdateCountryComponent } from './update-country/update-country.component';
 
 @NgModule({
   declarations: [
@@ -22,11 +29,18 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     SearchComponent,
     SummaryComponent,
     FooterComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CountryItemComponent,
+    CountryDetailComponent,
+    CreateCountryComponent,
+    DeleteCountryComponent,
+    UpdateCountryComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,20 @@
+<body>
+    <h5>Delete Country</h5>
+    <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <label for="name">Country id</label>
+                <input type="text" class="form-control" id="id" required [(ngModel)]="countryId" name="id">
+            </div>
+
+            <button type="submit" class="btn btn-success">Submit</button>
+
+        </form>
+
+    </div>
+
+    <div [hidden]="!submitted">
+        <h6>Country removed successfully!</h6>
+    </div>
+</body>
