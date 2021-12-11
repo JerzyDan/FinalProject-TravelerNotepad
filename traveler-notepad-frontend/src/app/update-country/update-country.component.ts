@@ -1,6 +1,7 @@
+import { CountryRequest } from './../models/country-request.model';
 import { Router } from '@angular/router';
 import { CountriesService } from './../countries.service';
-import { Country } from './../models/countries.model';
+//import { Country } from './../models/countries.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdateCountryComponent implements OnInit {
 
-  country!: Country;
+  country!: CountryRequest;
   submitted = false;
   countryId: number;
   countryName: string;
@@ -32,7 +33,7 @@ export class UpdateCountryComponent implements OnInit {
   }
 
   update() {
-    this.country = new Country(this.countryId, this.countryName, this.countryLanguage, this.countryClimate, this.countryArea);
+    this.country = new CountryRequest(this.countryId, this.countryName, this.countryLanguage, this.countryClimate, this.countryArea);
     console.log("current data", this.country);
     this.countriesService
     .updateCountry(this.countryId, this.country).subscribe(data => {
