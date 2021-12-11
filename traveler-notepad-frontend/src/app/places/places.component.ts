@@ -23,6 +23,8 @@ export class PlacesComponent implements OnInit {
     this.placesService.getPlaces().subscribe(
       result => {
         this.placesList = result;
+        
+        console.log(result);
       }
     );
   }

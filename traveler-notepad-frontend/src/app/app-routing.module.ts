@@ -1,3 +1,4 @@
+import { PlaceDetailComponent } from './place-detail/place-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SummaryComponent } from './summary/summary.component';
 import { SearchComponent } from './search/search.component';
@@ -22,7 +23,7 @@ const routes: Routes = [
   },
   {
     path: "places/:placeId",
-    //TODO 
+    component: PlaceDetailComponent
   },
   {
     path: "search",

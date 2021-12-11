@@ -1,0 +1,12 @@
+<body>
+    <h5>{{place.id + '. ' + place.name}}</h5>
+
+    <p>
+        Nearest city: {{place.city}} <br>
+        Days to explore: {{place.daysNeeded}} <br>
+        Status: {{place.status}} <br>
+        Description: {{place.description}}
+    </p>
+
+    <button (click)="sendToHome()">Back</button>
+</body>

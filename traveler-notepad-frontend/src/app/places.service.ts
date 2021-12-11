@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 })
 export class PlacesService {
 
-  private readonly baseUrl = 'http://localhost:8000/api/v1/places';
+  private readonly baseUrl = 'http://localhost:8200/api/v1/places';
 
   constructor(private http: HttpClient) { }
 

@@ -1,3 +1,5 @@
+import { FormsModule } from '@angular/forms';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -12,6 +14,7 @@ import { SummaryComponent } from './summary/summary.component';
 import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PlaceItemComponent } from './place-item/place-item.component';
+import { PlaceDetailComponent } from './place-detail/place-detail.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +27,14 @@ import { PlaceItemComponent } from './place-item/place-item.component';
     SummaryComponent,
     FooterComponent,
     PageNotFoundComponent,
-    PlaceItemComponent
+    PlaceItemComponent,
+    PlaceDetailComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
