@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @CrossOrigin(origins = "*")
 @Configuration
-@CrossOrigin(origins = "*")
 public class GatewayConfiguration {
 
     @Bean
