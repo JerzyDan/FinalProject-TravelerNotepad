@@ -10,6 +10,7 @@ import com.ironhack.countryservice.service.CountryService;
 import java.util.List;
 import java.util.Optional;
 
+@CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/api/v1/country")
 public class CountryController {
@@ -27,6 +28,7 @@ public class CountryController {
     }
 
     @GetMapping("/{id}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public Country getCountryById(@PathVariable(name = "id")Long id) {
         Optional<Country> optionalCountry = countryRepository.findById(id);
@@ -34,11 +36,13 @@ public class CountryController {
     }
 
     @PostMapping("/add")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.CREATED)
     public Country store(@RequestBody Country country) {
         return countryRepository.save(country);
     }
 
+    @CrossOrigin(origins = "*")
     @PutMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
     public void update(@PathVariable(name = "id")Long id, @RequestBody Country country) {
@@ -46,6 +50,7 @@ public class CountryController {
     }
 
     @DeleteMapping("/{id}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void remove (@PathVariable Long id) {
         countryRepository.deleteById(id);

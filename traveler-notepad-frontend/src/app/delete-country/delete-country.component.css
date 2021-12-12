@@ -1,0 +1,17 @@
+h5 {
+    margin-left: 20px;
+}
+
+div {
+    margin-left: 20px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+body {
+    background-image: url("../../assets/glob_ok.jpg");
+    background-position: 50% 50%;
+    background-repeat:no-repeat;
+}

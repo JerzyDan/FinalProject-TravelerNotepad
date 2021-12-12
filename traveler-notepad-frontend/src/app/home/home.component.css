@@ -3,3 +3,7 @@
     background-image: url('../../assets/spain_map.jpg');
     background-position: 50% 50%;
 }
+
+div {
+    margin-top: -14px;
+}
