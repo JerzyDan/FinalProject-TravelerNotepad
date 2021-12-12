@@ -11,7 +11,7 @@ export class Place {
         private _name: string,
         private _city: string,
         private _daysNeeded: number,
-        private _status: number,
+        private _status: string,
         private _description: string,
         private _countryId: number) {}
 
@@ -43,10 +43,10 @@ export class Place {
         this._daysNeeded = value;
     }
 
-    public get status(): number {
+    public get status(): string {
         return this._status;
     }
-    public set status(value: number) {
+    public set status(value: string) {
         this._status = value;
     }
 

@@ -1,6 +1,6 @@
 h5 {
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 25px;
+    margin-top: 0px;
 }
 
 p {
@@ -13,6 +13,8 @@ button {
 }
 
 body {
-    background-image: url('../../assets/ballons_ok.jpg');
-    margin-top: 0px;
+    background-image: url('../../assets/whiteMountains.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -14px;
 }

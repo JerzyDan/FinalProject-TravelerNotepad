@@ -15,6 +15,9 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { PlaceItemComponent } from './place-item/place-item.component';
 import { PlaceDetailComponent } from './place-detail/place-detail.component';
+import { PlaceAddComponent } from './place-add/place-add.component';
+import { PlaceDeleteComponent } from './place-delete/place-delete.component';
+import { PlaceUpdateComponent } from './place-update/place-update.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,10 @@ import { PlaceDetailComponent } from './place-detail/place-detail.component';
     FooterComponent,
     PageNotFoundComponent,
     PlaceItemComponent,
-    PlaceDetailComponent
+    PlaceDetailComponent,
+    PlaceAddComponent,
+    PlaceDeleteComponent,
+    PlaceUpdateComponent
   ],
   imports: [
     BrowserModule,

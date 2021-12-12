@@ -25,7 +25,7 @@ export class PlacesService {
   }
 
   updatePlace(id: number, value: any) : Observable<any> {
-    return this.http.put(`${this.baseUrl}/{id}`, value);
+    return this.http.put(`${this.baseUrl}/${id}`, value);
   }
 
   deletePlace(id: number) : Observable<any> {

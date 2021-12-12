@@ -17,7 +17,7 @@ export class PlaceDetailComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private router: Router
   ) {
-    this.place = new Place(1, "Pelori", "Tixion", 30, 1, "Mountains of Aman", 1);
+    this.place = new Place(1, "Pelori", "Tixion", 30, "TO_VISIT", "Mountains of Aman", 1);
    }
 
   ngOnInit(): void {

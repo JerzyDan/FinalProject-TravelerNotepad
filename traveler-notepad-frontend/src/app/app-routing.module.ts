@@ -1,3 +1,6 @@
+import { PlaceUpdateComponent } from './place-update/place-update.component';
+import { PlaceDeleteComponent } from './place-delete/place-delete.component';
+import { PlaceAddComponent } from './place-add/place-add.component';
 import { PlaceDetailComponent } from './place-detail/place-detail.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { SummaryComponent } from './summary/summary.component';
@@ -24,6 +27,18 @@ const routes: Routes = [
   {
     path: "place/:placeId",
     component: PlaceDetailComponent
+  },
+  {
+    path: "placeadd",
+    component: PlaceAddComponent
+  },
+  {
+    path: "placedelete",
+    component: PlaceDeleteComponent
+  },
+  {
+    path: "placeupdate",
+    component: PlaceUpdateComponent
   },
   {
     path: "search",

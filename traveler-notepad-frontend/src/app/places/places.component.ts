@@ -29,4 +29,16 @@ export class PlacesComponent implements OnInit {
     );
   }
 
+  addPlace(): void {
+    this.router.navigate(['placeadd'])
+  }
+
+  removePlace(): void {
+    this.router.navigate(['placedelete']);
+  }
+
+  updatePlace(): void {
+    this.router.navigate(['placeupdate'])
+  }
+
 }
