@@ -1,0 +1,20 @@
+h5 {
+    margin-left: 25px;
+    margin-top: 0px;
+}
+
+p {
+    margin-left: 37px;
+    font-weight: 600;
+}
+
+button {
+    margin-left: 20px;
+}
+
+body {
+    background-image: url('../../assets/whiteMountains.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: -14px;
+}

@@ -1,3 +1,6 @@
+import { Place } from './../models/places.model';
+import { PlacesService } from './../places.service';
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,9 +10,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlacesComponent implements OnInit {
 
-  constructor() { }
+  placesList: Place[];
+
+  constructor(
+    private placesService: PlacesService,
+    private router: Router
+  ) {
+    this.placesList = [];
+   }
 
   ngOnInit(): void {
+    this.placesService.getPlaces().subscribe(
+      result => {
+        this.placesList = result;
+        
+        console.log(result);
+      }
+    );
+  }
+
+  addPlace(): void {
+    this.router.navigate(['placeadd'])
+  }
+
+  removePlace(): void {
+    this.router.navigate(['placedelete']);
+  }
+
+  updatePlace(): void {
+    this.router.navigate(['placeupdate'])
   }
 
 }

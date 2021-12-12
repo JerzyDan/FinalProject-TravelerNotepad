@@ -1,0 +1,21 @@
+<body>
+    <br>
+    <h5>Delete place</h5>
+    <div [hidden]="submitted" style="width: 400px;">
+        <form (ngSubmit)="onSubmit()">
+
+            <div class="form-group">
+                <label for="name">Type place id</label>
+                <input type="text" class="form-control" id="id" required [(ngModel)]="placeId" name="id">
+            </div>
+
+            <button type="submit" class="btn btn-warning">Submit</button>
+
+        </form>
+
+    </div>
+
+    <div [hidden]="!submitted">
+        <h6>Place removed successfully!</h6>
+    </div>
+</body>
