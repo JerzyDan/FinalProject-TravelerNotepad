@@ -1,10 +1,12 @@
 <body>
-<h5>{{country.id + '. '+country.name}}</h5>
+    <br>
+    <h5>{{country.id + '. '+country.name}}</h5>
 
-<p>Official language: {{country.officialLanguage}} <br>
-    Climate: {{country.climate}} <br>
-    Area: {{country.area}} km2</p>
+    <p>Official language: {{country.officialLanguage}} <br>
+        Climate: {{country.climate}} <br>
+        Area: {{country.area}} km2
+    </p>
 
-<button (click)="sendToHome()">Back</button>
+    <button type="submit" class="btn btn-secondary" (click)="sendToHome()">Back</button>
 
 </body>
