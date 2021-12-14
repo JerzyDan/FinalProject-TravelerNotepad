@@ -1,1 +1,67 @@
-<p>search works!</p>
+<body>
+    <br>
+    <h5>Filter and search for places</h5>
+
+    <div style="width: 500px;">
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By name</button>
+                </div>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="placeName" name="name">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmit2()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By city</button>
+                </div>
+                <input type="text" class="form-control" id="city" required [(ngModel)]="placeCity" name="city">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By status</button>
+                </div>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="placeName" name="id">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By days</button>
+                </div>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="placeName" name="id">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmit()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By country id</button>
+                </div>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="placeName" name="id">
+            </div>  
+        </form>
+
+    </div>
+
+    <div [hidden]="!submitted">
+
+        <p>
+            Name: {{placeName}} <br>
+            Nearest city: {{place.city}} <br>
+            Days to explore: {{place.daysNeeded}} <br>
+            Status: {{place.status}} <br>
+            Description: {{place.description}}
+
+            <app-place-item *ngFor="let place of placeList" [place] = "place"></app-place-item>
+        </p>
+
+    </div>
+</body>

@@ -23,4 +23,12 @@ export class SearchService {
   getPlacesByStatus(status: string) : Observable<Place[]> {
     return this.http.get<Place[]>(`${this.baseUrl}/s/${status}`);
   }
+
+  getPlacesByDays(days: number) : Observable<Place[]> {
+    return this.http.get<Place[]>(`${this.baseUrl}/d/${days}`);
+  }
+
+  getPlacesByCountryId(countryId: number) : Observable<Place[]> {
+    return this.http.get<Place[]>(`${this.baseUrl}/ca/${countryId}`)
+  }
 }
