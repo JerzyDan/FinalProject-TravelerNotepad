@@ -15,11 +15,17 @@ export class SearchComponent implements OnInit {
   submitted = false;
   placeName: string;
   placeCity: string;
+  placeStatus: string;
+  placeDays: number;
+  placeCountryId: number;
 
   constructor(private searchService: SearchService, private router: Router) {
     this.placeName = "";
     this.placeCity = "";
+    this.placeStatus = "";
     this.placeList = [];
+    this.placeDays = 0;
+    this.placeCountryId = 0;
    }
 
   ngOnInit(): void {
@@ -41,14 +47,53 @@ export class SearchComponent implements OnInit {
     error => console.log(error));
   }
 
-  onSubmit() {
+  searchByStatus() {
+    this.searchService.getPlacesByStatus(this.placeStatus).subscribe(data => {
+      console.log(data);
+      this.placeList = data;
+    },
+    error => console.log(error));
+  }
+
+  searchByDays() {
+    this.searchService.getPlacesByDays(this.placeDays).subscribe(data => {
+      console.log(data);
+      this.placeList = data;
+    },
+    error => console.log(error));
+  }
+
+  searchByCountryId() {
+    this.searchService.getPlacesByCountryId(this.placeCountryId).subscribe(data => {
+      console.log(data);
+      this.placeList = data;
+    },
+    error => console.log(error));
+  }
+
+  onSubmitName() {
     this.submitted = true;
     this.searchByName();
   }
 
-  onSubmit2() {
+  onSubmitCity() {
     this.submitted = true;
     this.searchByCity();
+  }
+
+  onSubmitStatus() {
+    this.submitted = true;
+    this.searchByStatus();
+  }
+
+  onSubmitDays() {
+    this.submitted = true;
+    this.searchByDays();
+  }
+
+  onSubmitCountryId() {
+    this.submitted = true;
+    this.searchByCountryId();
   }
 
 }
