@@ -1,11 +1,4 @@
 export class Place {
-    /*id: number,
-    name: string,
-    city: string,
-    daysNeeded: number,
-    status: number,
-    description: string,
-    countryId: number*/
 
     constructor(private _id: number,
         private _name: string,
