@@ -1,7 +1,6 @@
 import { CountryRequest } from './../models/country-request.model';
 import { Router } from '@angular/router';
 import { CountriesService } from './../countries.service';
-//import { Country } from './../models/countries.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({

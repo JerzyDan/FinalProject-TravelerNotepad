@@ -19,6 +19,7 @@ button {
 body {
     background-image: url("../../assets/countries_glob_ok.jpg");
     background-size: 100% 100%;
+    margin-top: -16px;
 }
 
 h6 {

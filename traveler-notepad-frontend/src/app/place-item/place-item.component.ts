@@ -7,13 +7,16 @@ import { Place } from '../models/places.model';
   styleUrls: ['./place-item.component.css']
 })
 export class PlaceItemComponent implements OnInit {
-
+  
   @Input()
   place!: Place;
 
-  constructor() { }
+  constructor() {
+    console.log("Place Item Component",this.place);
+   }
 
   ngOnInit(): void {
+    console.log("Place Item Component",this.place);
   }
 
 }

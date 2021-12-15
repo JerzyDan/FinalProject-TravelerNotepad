@@ -1,15 +1,15 @@
 <body>
-    
+    <br>
     <h5>Countries list:</h5>
 
     <div>
         <app-country-item *ngFor="let country of countriesList" [country] = "country"></app-country-item>
     </div>
 
-    <button (click)="addCountry()">Add</button>
+    <button type="submit" class="btn btn-success" (click)="addCountry()">Add</button>
 
-    <button (click)="deleteCountry()">Remove</button>
+    <button type="submit" class="btn btn-danger" (click)="deleteCountry()">Remove</button>
 
-    <button (click)="updateCountry()">Update</button>
+    <button type="submit" class="btn btn-info" (click)="updateCountry()">Update</button>
 
 </body>

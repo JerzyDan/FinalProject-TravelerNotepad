@@ -1,1 +1,74 @@
-<p>search works!</p>
+<body>
+    <br>
+    <h5>Filter and search for places</h5>
+
+    <div style="width: 500px;">
+
+        <form (ngSubmit)="onSubmitName()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By name</button>
+                </div>
+                <input type="text" class="form-control" id="name" required [(ngModel)]="placeName" name="name">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmitCity()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By city</button>
+                </div>
+                <input type="text" class="form-control" id="city" required [(ngModel)]="placeCity" name="city">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmitStatus()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By status</button>
+                </div>
+                <select class="form-control" id="status" required [(ngModel)]="placeStatus" name="status">
+                    <option>TO_VISIT</option>
+                    <option>VISITED</option>
+                    <option>NEXT_TRIP</option>
+                    <option>FAVORITE</option>
+                    <option>NEVER_AGAIN</option>
+                </select>
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmitDays()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By days</button>
+                </div>
+                <input type="text" class="form-control" id="days" required [(ngModel)]="placeDays" name="days">
+            </div>  
+        </form>
+
+        <form (ngSubmit)="onSubmitCountryId()">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <button type="submit" class="btn btn-primary">By country id</button>
+                </div>
+                <input type="text" class="form-control" id="countryId" required [(ngModel)]="placeCountryId" name="countryId">
+            </div>  
+        </form>
+
+    </div>
+
+    <div [hidden]="!submitted">
+
+        <h5>Search results:</h5>
+        
+        <div style="margin-left: 30px;" *ngIf="checkLength()"><app-place-item *ngFor="let place of placeList" [place] = "place"></app-place-item></div>
+        <p *ngIf="!checkLength()">
+            Name: {{place.name}} <br>
+            Nearest city: {{getCity}} <br>
+            Days to explore: {{place.daysNeeded}} <br>
+            Status: {{place.status}} <br>
+            Description: {{place.description}}
+        </p>
+
+    </div>
+</body>

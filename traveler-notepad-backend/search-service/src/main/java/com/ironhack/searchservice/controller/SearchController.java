@@ -23,6 +23,7 @@ public class SearchController {
     PlaceRepository placeRepository;
 
     @GetMapping("/{name}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public Optional<Place> getPlaceByName(@PathVariable(name = "name") String name) {
         Optional<Place> foundPlace = placeRepository.findByName(name);
@@ -33,6 +34,7 @@ public class SearchController {
     }
 
     @GetMapping("/c/{city}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public List<Place> getPlacesByCity(@PathVariable(name = "city") String city) {
         List<Place> foundPlaces = placeRepository.findByCity(city);
@@ -40,6 +42,7 @@ public class SearchController {
     }
 
     @GetMapping("/s/{status}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public List<Place> getPlacesByStatus(@PathVariable(name = "status")Status status) {
         List<Place> foundPlaces = placeRepository.findByStatus(status);
@@ -47,6 +50,7 @@ public class SearchController {
     }
 
     @GetMapping("/d/{days}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public List<Place> getPlacesByDays(@PathVariable(name = "days") Integer days) {
         List<Place> foundPlaces = placeRepository.findByDaysNeededLessThanEqual(days);
@@ -54,6 +58,7 @@ public class SearchController {
     }
 
     @GetMapping("/ca/{id}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public List<Place> getPlacesByCountry(@PathVariable(name = "id") Long id) {
         List<Place> foundPlaces = placeRepository.findByCountryId(id);
