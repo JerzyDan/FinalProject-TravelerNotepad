@@ -20,6 +20,7 @@ export class SearchComponent implements OnInit {
   placeCountryId: number;
 
   constructor(private searchService: SearchService, private router: Router) {
+    this.place = new Place(1,"","",0,"","",0);
     this.placeName = "";
     this.placeCity = "";
     this.placeStatus = "";
@@ -29,12 +30,14 @@ export class SearchComponent implements OnInit {
    }
 
   ngOnInit(): void {
+    console.log("Place Item Component",this.place);
   }
 
   searchByName() {
     this.searchService.getPlaceByName(this.placeName).subscribe(data => {
       this.place = data;
       console.log(data);
+      this.placeCity = data.city;
     },
     error => console.log(error));
   }
@@ -43,6 +46,9 @@ export class SearchComponent implements OnInit {
     this.searchService.getPlacesByCity(this.placeCity).subscribe(data => {
       console.log(data);
       this.placeList = data;
+      if(this.placeList.length==1) {
+          this.place = this.placeList[0];
+      }
     },
     error => console.log(error));
   }
@@ -94,6 +100,17 @@ export class SearchComponent implements OnInit {
   onSubmitCountryId() {
     this.submitted = true;
     this.searchByCountryId();
+  }
+
+  checkLength() {
+    if(this.placeList.length>1) {
+      return true;
+    }
+    else return false;
+  }
+
+  get getCity() {
+     return (this.place.city) ? this.place.city : null;
   }
 
 }

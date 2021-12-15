@@ -59,14 +59,15 @@
 
     <div [hidden]="!submitted">
 
-        <p>
-            Name: {{placeName}} <br>
-            Nearest city: {{place.city}} <br>
+        <h5>Search results:</h5>
+        
+        <div style="margin-left: 30px;" *ngIf="checkLength()"><app-place-item *ngFor="let place of placeList" [place] = "place"></app-place-item></div>
+        <p *ngIf="!checkLength()">
+            Name: {{place.name}} <br>
+            Nearest city: {{getCity}} <br>
             Days to explore: {{place.daysNeeded}} <br>
             Status: {{place.status}} <br>
             Description: {{place.description}}
-
-            <app-place-item *ngFor="let place of placeList" [place] = "place"></app-place-item>
         </p>
 
     </div>
