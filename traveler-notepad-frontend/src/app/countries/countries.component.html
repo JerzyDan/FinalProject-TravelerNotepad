@@ -3,7 +3,7 @@
     <h5>Countries list:</h5>
 
     <div class="list-group">
-        <app-country-item class="list-group-item" style="width: 250px; background-color: transparent;" *ngFor="let country of countriesList" [country] = "country"></app-country-item>
+        <app-country-item class="list-group-item" style="width: 230px; background-color: transparent;" *ngFor="let country of countriesList" [country] = "country"></app-country-item>
     </div>
 
     <button type="submit" class="btn btn-success" (click)="addCountry()">Add</button>
@@ -13,11 +13,3 @@
     <button type="submit" class="btn btn-info" (click)="updateCountry()">Update</button>
 
 </body>
-
-<ul class="list-group list-group-flush">
-    <li class="list-group-item">Cras justo odio</li>
-    <li class="list-group-item">Dapibus ac facilisis in</li>
-    <li class="list-group-item">Morbi leo risus</li>
-    <li class="list-group-item">Porta ac consectetur ac</li>
-    <li class="list-group-item">Vestibulum at eros</li>
-  </ul>
