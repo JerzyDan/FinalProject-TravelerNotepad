@@ -3,7 +3,7 @@
     <h5>The World places:</h5>
 
     <div>
-        <app-place-item *ngFor="let place of placesList" [place] = "place"></app-place-item>
+        <app-place-item class="list-group-item" style="width: 900px; background-color: transparent;" *ngFor="let place of placesList" [place] = "place"></app-place-item>
     </div>
 
     <button type="submit" class="btn btn-success" (click)="addPlace()">Add</button>
