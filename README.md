@@ -7,11 +7,11 @@
 * [API](#api)
 * [Webpage](#webpage)
 
-##General info
+## General info
 This project is a simple travel management application.
 It allows you to save countries and places in the database. Edit saved data and delete unnecessary. Saved places can be searched by several categories. The app also displays basic statistics about the saved places.
 
-##Technologies
+## Technologies
 The project was created with help of:
 * TypeScript
 * Java
@@ -21,7 +21,7 @@ The project was created with help of:
 
 Backend consist of five microservices, developed with Java. Frontend was created in Angular.
 
-##Setup
+## Setup
 To run this project clone Github repository by using link: 
 ```
 https://github.com/JerzyDan/FinalProject-TravelerNotepad.git
@@ -37,7 +37,7 @@ $ ng serve
 ```
 Frontend is available at url: localhost:4200
 
-##API
+## API
 The project has divided the functionalities between microservices. The application consists of 5 microservices, including gateway and server. To run the project all microservices should be started - we recommend starting with the server. All endpoints are available from the gateway level, which operates on port 8000.
 
 Method | Endpoint | Description
@@ -61,7 +61,7 @@ Method | Endpoint | Description
  GET | /api/v1/report/c/{status} | returns the number of countries with the specified status
  GET | /api/v1/report/d/{status} | return sum of the days needed for places with specified status
 
-##Webpage
+## Webpage
 The homepage available by default at localhost:4200 contain navbar at the top. From navbar user can choose:
 
 * Home - main page
