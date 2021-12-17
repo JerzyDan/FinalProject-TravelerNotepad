@@ -1,0 +1,13 @@
+<body>
+    <br>
+    <h5>{{place.id + '. ' + place.name}}</h5>
+
+    <p>
+        <li class="list-group-item" style="width: 500px; background-color: transparent;">Nearest city: {{place.city}}</li>
+        <li class="list-group-item" style="width: 500px; background-color: transparent;">Days to explore: {{place.daysNeeded}}</li>
+        <li class="list-group-item" style="width: 500px; background-color: transparent;">{{place.status}}</li>
+        <li class="list-group-item" style="width: 500px; background-color: transparent;">Description: {{place.description}}</li>
+    </p>
+
+    <button type="submit" class="btn btn-secondary" (click)="sendToHome()">Back</button>
+</body>

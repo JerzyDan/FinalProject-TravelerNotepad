@@ -1,0 +1,13 @@
+<body>
+    <br>
+    <h5>{{country.id + '. '+country.name}}</h5>
+
+    <p>
+        <li class="list-group-item" style="width: 300px; background-color: transparent;">Language: {{country.officialLanguage}} </li>
+        <li class="list-group-item" style="width: 300px; background-color: transparent;">Climate: {{country.climate}} </li>
+        <li class="list-group-item" style="width: 300px; background-color: transparent;">Area: {{country.area}} km2</li>
+    </p>
+
+    <button type="submit" class="btn btn-secondary" (click)="sendToHome()">Back</button>
+
+</body>

@@ -14,18 +14,21 @@ public class RaportController {
     PlaceRepository placeRepository;
 
     @GetMapping("/{status}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public Integer countPlacesByStatus(@PathVariable(name = "status")Status status) {
         return placeRepository.countPlacesByStatus(status);
     }
 
     @GetMapping("/c/{status}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public Integer countCountriesByStatus(@PathVariable(name = "status")Status status) {
         return placeRepository.countCountriesByStatus(status);
     }
 
     @GetMapping("/d/{status}")
+    @CrossOrigin(origins = "*")
     @ResponseStatus(HttpStatus.OK)
     public Integer countDaysNeededByStatus(@PathVariable(name = "status")Status status) {
         return placeRepository.countDaysNeededByStatus(status);

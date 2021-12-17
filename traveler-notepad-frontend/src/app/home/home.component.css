@@ -1,0 +1,9 @@
+.image {
+    height: 60em; background-size:cover; width:auto;
+    background-image: url('../../assets/spain_map.jpg');
+    background-position: 50% 50%;
+}
+
+div {
+    margin-top: -16px;
+}
