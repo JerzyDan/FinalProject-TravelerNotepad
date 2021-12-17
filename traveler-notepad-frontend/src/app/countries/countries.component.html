@@ -2,8 +2,8 @@
     <br>
     <h5>Countries list:</h5>
 
-    <div>
-        <app-country-item *ngFor="let country of countriesList" [country] = "country"></app-country-item>
+    <div class="list-group">
+        <app-country-item class="list-group-item" style="width: 230px; background-color: transparent;" *ngFor="let country of countriesList" [country] = "country"></app-country-item>
     </div>
 
     <button type="submit" class="btn btn-success" (click)="addCountry()">Add</button>
